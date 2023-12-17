@@ -1,0 +1,53 @@
+.item-list{
+    list-style: none;
+    padding: 0;
+}
+.icon-item{
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+    margin-left:  20px;
+    width: 15%;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS';
+}
+
+.icon-item::before
+{    
+    padding-left: 20px;
+    padding-right:50px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    content: "";
+    font-size: 25px;
+}
+
+.icon-item:hover
+{
+    background-color: rgb(141, 140, 140);
+    cursor:pointer;
+}
+#edit::before
+{
+    background-image: url(iocns/edit.png);    
+}
+
+#favorites::before
+{
+    background-image: url(iocns/favorites.png);    
+}
+
+#history::before
+{
+    background-image: url(iocns/history.png);    
+}
+
+#security::before
+{
+    background-image: url(iocns/security.png);    
+}
+
+#settings::before
+{
+    background-image: url(iocns/settings.png);    
+}
