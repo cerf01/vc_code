@@ -1,0 +1,59 @@
+
+.block{
+    padding: 1%;
+    margin-left: 8.5%;
+    min-width: 100px;
+    width: 20%;
+}
+.container{
+    background-color: gray;
+    display: flex;     
+    min-width: 500px;
+}
+
+.content-text{
+    margin: 2%;
+    width: 100%;
+}
+
+.pic{
+    min-width: 100px;
+    width: 130%;
+    height: auto;
+    padding-top: 10%;
+}
+
+.content{
+    display: inline-flex;
+    padding: 0;
+    margin: 5%;
+}
+
+.tabs{
+    height: 50px; width: 100px;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-bottom: 10%;
+    background-color: rgb(59, 59, 59);
+}
+.tabs a
+{
+    text-decoration: none;
+    color:aliceblue;
+    
+}
+
+.tabs a:hover{
+    color: aquamarine;
+}
+
+.tabs:hover{
+    background-color: black;
+}
+
+#this-tab{
+    background-color: gray;
+}
+#this-tab h2:hover{
+    cursor:not-allowed;
+}

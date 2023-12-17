@@ -1,0 +1,151 @@
+.vertical-menu{
+    list-style-type: none; 
+    padding: 0%; 
+    margin: 0;
+}
+#logo-icon{
+    margin-top: 10px;
+    margin-left: 15px;
+    overflow: hidden;
+    transition: max-width 0.5s ease-in-out; 
+}
+#left-arr{
+    visibility: hidden;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    height: 15px;
+}
+
+#right-arr{
+   margin-left: 27px;
+   height: 15px;
+   margin-bottom: 30px;
+}
+.leftside-panel{
+max-width: 300px;
+white-space: nowrap;
+margin-left: 1%;
+}
+.main-container{
+   
+   background-image:    
+        linear-gradient(rgb(101, 124, 148),rgb(62, 89, 116)),    
+        url(bg/park.jpg);
+        background-blend-mode:multiply;
+        
+    background-repeat:  no-repeat;
+    max-width: 54px;
+    overflow: hidden;
+    transition: max-width 0.5s ease-in-out; 
+}
+.vertical-menu li {
+    margin-left: 3px;
+    margin-bottom: 12px;
+    margin-top:  12px;
+}
+
+.vertical-menu li a{
+    color: black;    
+    cursor: pointer;   
+    text-decoration:dashed;
+    font-size: 120%;
+    font-weight: bold;
+
+}
+.vertical-menu li a:hover{
+    color: white;    
+}
+
+span::before
+{
+    padding-left: 27px;
+    padding-right: 24px;
+    background-size: 52%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    content: "";
+    font-size: 25px;
+}
+.main-item span::before{
+    background-image: url("icons/statistic.png");
+}
+
+.progress-item span::before{
+    background-image: url("icons/graph.png");
+   
+}
+
+.rewards-item span::before{
+    background-image: url("icons/star.png");
+   
+}
+
+.homeworks-item span::before{
+    background-image: url("icons/progress-bar.png");
+   
+}
+
+.library-item span::before{
+    background-image: url("icons/two-books.png");
+   
+}
+
+.news-item span::before{
+    background-image: url("icons/speech-bubble.png");
+   
+}
+
+.payment-item span::before{
+    background-image: url("icons/credit-card.png");
+   
+}
+
+.schedule-item span::before{
+    background-image: url("icons/calendar.png");
+   
+}
+
+.feedback-item span::before{
+    background-image: url("icons/pen.png");
+   
+}
+
+.profile-item span::before{
+    background-image: url("icons/user.png");
+}
+
+.food-pay-item span::before{
+    background-image: url("icons/question.png");
+   
+}
+
+.contacts-item span::before{
+    background-image: url("icons/mapmark.png");
+   
+}
+
+.signal-item span::before{
+    background-image: url("icons/mic.png");
+   
+}
+
+.manual-item span::before{
+    background-image: url("icons/open-book.png");
+   
+}
+
+.main-container:hover {
+    max-width: 100%;
+
+}
+
+
+.main-container:hover #left-arr{
+    visibility: visible;
+        
+}
+
+.main-container:hover #right-arr{
+    visibility: hidden;
+}
+
