@@ -51,3 +51,10 @@
 {
     background-image: url(iocns/settings.png);    
 }
+
+.page-links{
+    text-align: left;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    text-decoration: none;
+}

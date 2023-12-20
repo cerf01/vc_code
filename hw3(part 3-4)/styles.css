@@ -122,10 +122,17 @@ content: url(icons/insta_gray.png);
 .yt-icon{
     content: url(icons/youtube_gray.png);
 }
-a{
+.block-link{
     color: white;
     text-decoration: none;
 }
-a:hover{
+.block-link:hover{
     color: blue;
+}
+
+.page-links{
+    text-align: left;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    text-decoration: none;
 }
