@@ -72,10 +72,3 @@ background-color: darkgray;
 .in-content1:hover> .pic{
     display: block;
 }
-
-#sps .pic{
-    content: url("worksPics/cross.png");
-}
-#sps2 .pic{
-    content:url("worksPics/Rules.png");
-}
