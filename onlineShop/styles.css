@@ -1,0 +1,296 @@
+html{
+    font-family: sans-serif;
+    background-color: rgba(26, 28, 37, 0.822);
+}
+
+body{
+    color: rgb(255, 220, 104);
+}
+
+.header{
+    background-color: 
+    rgba(11, 155, 252, 0.473); 
+    margin: 2%; 
+    padding: 1%; 
+    display: flex;
+    min-width: 500px;  
+}
+
+.main-container{   
+    margin: 2%; 
+    padding: 1%;
+    display: flex;
+    min-width: 500px;  
+}
+
+.footer{
+    background-color: rgb(72, 126, 226);
+    padding: 0.7%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+}
+
+.footer-links{
+    margin-left: 13%;
+    margin-right: 12%;
+}
+
+.logo-pic{
+    width:13%;
+    height: auto;
+    min-width: 100px;
+}
+
+.title-pic{
+    width:19%;      
+    height: auto;
+    min-width: 150px;  
+}
+
+.cart-pic{
+    width: 9%;
+    height: auto;
+    min-width: 60px;  
+    margin: 13%;
+    margin-top: 19%;
+}
+
+.left-block{
+    background-color: rgb(69, 101, 189);
+    min-width: 200px;
+    width: 16%;
+    height: 15%;
+    
+}
+
+.content{
+    background-color: rgb(40, 121, 197);
+    padding: 1%; 
+    margin-left: 2%;
+    width: 92%;
+}
+.left-block-list{
+    list-style: none;
+    padding: 10%;
+}
+
+.left-block-list li,.in-catalog-content li{
+ 
+    padding: 2%;
+    padding-bottom: 7%;
+    font-size: 120%;
+}
+
+.left-block-list li a:hover{
+    cursor: pointer;
+}
+
+.left-block-list li:hover{
+    cursor:default;
+}
+
+.left-block-list li::before{
+    padding-left: 17px;
+    padding-right: 14px;
+    background-size: 33%;
+    background-repeat: no-repeat;
+    background-position: center ;
+    content: "";
+    font-size: 21px;
+    background-image: url("pics/arrow\(open\).png");
+
+}
+
+.sublist-container
+{
+    background-color: rgb(92, 122, 206);
+    display: none;
+    position:sticky;
+    margin-left: 10.5%;
+    margin-top: 3%;
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    font-size: 70%;
+}
+
+.li-holder:hover >  .sublist-container
+{
+    display:block;
+}
+
+.sublist
+{
+    list-style: none;
+    padding: 2%;
+}
+
+.ads-block{
+    width: 100%;
+}
+
+.product-container, .catalog-content{
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.product{
+    border-style: solid;
+    border-radius: 40px; 
+    min-width: 150px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    padding: 1.5%;
+
+}
+
+
+.product:hover{
+  background-color: rgb(77, 134, 182);
+  min-width: 70px;
+  height: auto;
+   margin: 1%;
+   padding: 1;
+   max-width: 250px;
+   margin-left: 2%;
+}
+
+
+a{
+    color: rgb(255, 220, 104);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgba(241, 166, 5, 0.87);
+    cursor: pointer;
+}
+
+.product-pic{
+   
+    min-width: 70px;
+    min-height: 100px;
+    margin: 1%;
+    padding: 1%;
+    padding-left: 1.5%;
+    max-width: 200px;
+}
+
+.catalog-content{
+    width: 80%;
+    padding: 2%;
+    padding-left: 10%;
+}
+
+.in-catalog-content
+{
+    min-width: 50px;
+    margin: 2%;
+}
+
+.infos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infos-list li{
+    margin-bottom: 0.5%;
+}
+
+.infos-pic-block{
+    margin-right: 2%;
+}
+
+.infos-pic{
+     width:90%;
+     min-width: 40px;
+     max-width: 210px;
+}
+
+.infos-text{
+    margin-left: 1%;
+    width: 40%;
+    min-width: 200px;
+}
+
+.to-cart{
+    border-style: solid;
+    text-align: center;
+    width: 50%;
+    min-width: 50px;
+    padding: 5%;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: rgb(81, 179, 81);
+    border-radius: 20px;
+}
+
+.to-cart:hover{
+    background-color: green;
+    cursor: pointer;
+    width: 55%;
+    margin-left: 13%;
+}
+.good{
+    color: rgb(255, 187, 0)
+}
+.bad{
+    color: black;
+}
+.comments-container
+{
+    height:450px;
+    width: 18%;
+    min-width: 200px;
+    background-color: gray;
+    margin-left: 18%;
+    margin-right: 5%;
+    padding: 1%;    
+}
+
+.comment{
+    padding: 1%;
+    flex-wrap: wrap;
+    margin-left: 0.5%;
+    border-style: solid;
+    border-color: aliceblue;
+    margin-bottom: 1%;
+    border-width: 2px;
+    word-wrap: break-word;
+    
+}
+
+.product-in-cart{
+    min-width: 70px;
+    max-width: 200px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 1%;
+    padding-left: 1.5%;
+    margin: 1%;
+}
+
+.product-in-cart:hover{
+    max-width: 300px;
+    width: 16%;
+    background-color: rgb(25, 111, 224);
+}
+.cart-paymant{
+
+    background-color: rgb(240, 191, 32);
+    border-style: solid;
+    width: 100px;
+    height: 50px;
+    padding: 1;
+}
+
+.cart-paymant:hover
+{
+    background-color: green;
+}
+.paymant{
+    float: inline-end;
+}

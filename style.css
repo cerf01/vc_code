@@ -1,12 +1,28 @@
-.content{
+html{
+    font-family:Arial;
+}
+
+.header{
+background-color: rgb(189, 166, 132);
+padding: 2%;
+margin: 2%;
+}
+
+.works-list{
 width: 15%;
 margin: 2%;
 padding: 1%;
 background-color: gray;
+max-height: 230px;
+min-width: 200px;
 }
+
+.works-list ul{
+list-style: none;
+    }
 .my-page{
   background-color: gray;
-    padding: 3%;
+    padding: 6%;
 }
 .my-page:hover
 {
@@ -18,4 +34,48 @@ background-color: darkgray;
 }
 .my-page a:hover{
     color:aquamarine;
+}
+.main-container{
+    display: flex;
+}
+.main-content{
+    background-color: rgb(184, 171, 152);
+    width: 70%;
+    
+}
+.pic{
+    display: none;
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: auto;
+}
+
+.content1{
+    display: flex;
+    background-color: bisque;
+    color: black;
+}
+.in-content1
+{
+    margin: 1%;
+    border-style:solid;
+    padding: 1%;
+    border-radius: 400px;
+}
+.in-content1:hover
+{
+   background-color: rgb(196, 178, 153);
+   cursor: pointer;
+}
+.in-content1:hover> .pic{
+    display: block;
+}
+
+#sps .pic{
+    content: url("worksPics/cross.png");
+}
+#sps2 .pic{
+    content:url("worksPics/Rules.png");
 }
