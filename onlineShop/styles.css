@@ -7,13 +7,20 @@ body{
     color: rgb(255, 220, 104);
 }
 
+img{
+    min-height: 70px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
 .header{
     background-color: 
-    rgba(11, 155, 252, 0.473); 
+    rgb(6, 120, 196); 
     margin: 2%; 
     padding: 1%; 
     display: flex;
     min-width: 500px;  
+    
 }
 
 .main-container{   
@@ -24,11 +31,12 @@ body{
 }
 
 .footer{
+    
     background-color: rgb(72, 126, 226);
     padding: 0.7%;
     margin-left: 2%;
     margin-right: 2%;
-    height: 100%;
+    width: 100%;
 }
 
 .footer-links{
@@ -36,24 +44,27 @@ body{
     margin-right: 12%;
 }
 
-.logo-pic{
+#logo-pic{
     width:13%;
     height: auto;
-    min-width: 100px;
+    min-width: 100px;  
+    top:0;
+    content: url(pics/ElementsPic/logo.png);
 }
 
-.title-pic{
+#title-pic{
     width:19%;      
     height: auto;
     min-width: 150px;  
+    content: url(pics/ElementsPic/title.png);
 }
 
-.cart-pic{
-    width: 9%;
-    height: auto;
+#cart-pic{
+    width: 5%;
     min-width: 60px;  
     margin: 13%;
     margin-top: 19%;
+    content: url(pics/ElementsPic/cart.png);
 }
 
 .left-block{
@@ -61,7 +72,9 @@ body{
     min-width: 200px;
     width: 16%;
     height: 15%;
-    
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
 }
 
 .content{
@@ -98,14 +111,13 @@ body{
     background-position: center ;
     content: "";
     font-size: 21px;
-    background-image: url("pics/arrow\(open\).png");
+    background-image: url("pics/ElementsPic/arrow\(right\).png");
 
 }
 
 .sublist-container
 {
     display: none;
-    position:sticky;
     margin-left: 10.5%;
     margin-top: 3%;
     width: 100%;
@@ -171,11 +183,11 @@ a:hover{
 .product-pic{
    
     min-width: 70px;
-    min-height: 100px;
     margin: 1%;
     padding: 1%;
     padding-left: 1.5%;
     max-width: 200px;
+    position: sticky;
 }
 
 .catalog-content{
@@ -200,38 +212,44 @@ a:hover{
 }
 
 .infos-pic-block{
-    margin-right: 2%;
+    padding: 1%;
+    margin-right:1.5%;
+    min-width: 50px;
+    width: 20%;
+    max-width: 500px;
 }
 
 .infos-pic{
-     width:90%;
-     min-width: 40px;
-     max-width: 210px;
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    
+
 }
 
 .infos-text{
     margin-left: 1%;
-    width: 40%;
+    width: 30%;
     min-width: 200px;
+    font-size: 120%;
 }
 
-.to-cart{
+.to-do{
     border-style: solid;
     text-align: center;
     width: 50%;
-    min-width: 50px;
-    padding: 5%;
+    min-width: 100px;
+    height: 20px;
+    padding: 15px;
     margin-left: 15%;
     margin-top: 5%;
-    background-color: rgb(81, 179, 81);
-    border-radius: 20px;
+    background-color: rgb(202, 151, 39);
+    font-weight: bold;
 }
 
-.to-cart:hover{
-    background-color: green;
+.to-do:hover{
+    background-color: rgb(196, 137, 12);
     cursor: pointer;
-    width: 55%;
-    margin-left: 13%;
 }
 .good{
     color: rgb(255, 187, 0)
@@ -244,14 +262,17 @@ a:hover{
     height:450px;
     width: 18%;
     min-width: 200px;
-    background-color: gray;
+    background-color: rgb(103, 149, 219);
     margin-left: 18%;
     margin-right: 5%;
     padding: 1.5%;    
 }
 
 .comment{
-    padding: 1.5%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
     flex-wrap: wrap;
     margin-left: 0.5%;
     border-style: solid;
@@ -259,38 +280,52 @@ a:hover{
     border-width: 2px;
     word-wrap: break-word;
     border-radius: 20px;
+    background-color: rgb(111, 143, 175);
     
 }
 
 .product-in-cart{
     min-width: 70px;
-    max-width: 200px;
-    border-style: solid;
-    border-radius: 20px;
     padding: 1%;
-    padding-left: 1.5%;
-    margin: 1%;
+    max-width: 20px;
+
 }
 
 .product-in-cart:hover{
-    max-width: 300px;
-    width: 16%;
     background-color: rgb(25, 111, 224);
 }
-.cart-paymant{
 
-    background-color: rgb(240, 191, 32);
-    border-style: solid;
-    width: 100px;
-    height: 50px;
-    padding: 1;
-    border-radius: 20px;
-}
-
-.cart-paymant:hover
-{
-    background-color: green;
-}
-.paymant{
+.paymant{   
+    margin: 1%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    padding: 1%;
+    width: 15%;
+    background-color: rgb(25, 111, 224);
     float: inline-end;
 }
+
+.product-pic-container{
+    background-color: black;
+    padding: 10%;
+}
+
+html 
+{            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.student-table
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+.student-table th, .student-table td
+{
+    background-color: rgb(40, 121, 197);         
+    margin: 0;
+}
+
